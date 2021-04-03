@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block content %}
 
-<div class="row" mt-9>
+<div class="row mt-4">
   <div class="col">
     <h1>Add Item</h1>
     <form action="add_todo_list/" method="post" class="form-inline">
@@ -9,7 +9,7 @@
     </form>
   </div>
 </div>
-  <div class="row" mt-4>
+  <div class="row mt-4">
     <div class="col">
       <ul class="list-group">
         {% for todo_item in todo_items %}
@@ -20,8 +20,9 @@
               </form>
             </div>
           </li>
-        {% endfor %}
-      </ul>
+          <hr>
+          {% endfor %}
+        </ul>
     </div>
   </div>
 
